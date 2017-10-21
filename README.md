@@ -8,11 +8,11 @@ Implenment Linear Regression to predict $\hat{y}$ by Tensorflow. The dataset and
 #### Linear Regression
 $\hat{y}$ is the value we predict for y. We define the ourput is 
 $$\hat{y}=XW+b ...(1)$$ 
-X is a n*m input matrix. (n: number of samples, m: number of features) </b>
-W is a m*1 matrix, which is the linear regression parameters that we want.
+X is a $n\cdot m$ input matrix. (n: number of samples, m: number of features) </br>
+W is a $m\cdot 1$ matrix, which is the linear regression parameters that we want.
 Modify equation (1) to
 $$\hat{y}=XW ...(2)$$ 
-by augmenting X to n*(m+1) matrix. The last column are all one, and W will also become (m+1)*1 matrix. The last element of W achieve the same result as b.  </b>
+by augmenting X to n*(m+1) matrix. The last column are all one, and W will also become (m+1)*1 matrix. The last element of W achieve the same result as b.  </br>
 Next, apply **normal function** to derive W.
 $$W=(X\^{(train)T}X\^{(train)})\^{-1}X\^{(train)T}y\^{(train)}$$
 
@@ -26,5 +26,5 @@ $$New data=log[(data-min+1)/(max-min)]$$
 For **error rate**, it is the average of $\frac{|y-\hat{y}|}{y}$
 
 #### Result
-Without data preprocessing, the error rate of testing part is 0.344205405993. </b>
+Without data preprocessing, the error rate of testing part is 0.344205405993. </br>
 With data preprocessing, the error rate is 0.314443644703.
